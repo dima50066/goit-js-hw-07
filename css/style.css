@@ -1,0 +1,14 @@
+.task1 {
+  background-color: aqua;
+}
+
+.task2 {
+  background-color: black;
+}
+
+.gallery {
+  display: flex;
+  row-gap: 48px;
+  column-gap: 24px;
+  flex-wrap: wrap;
+}
