@@ -6,7 +6,7 @@ function getRandomHexColor() {
 
 const changeBgColor = document.querySelector(".change-color");
 changeBgColor.addEventListener("click", changeColor);
-const widget = document.querySelector(".task5");
+const widget = document.querySelector(".widget");
 function changeColor() {
   const color = getRandomHexColor();
   widget.style.backgroundColor = color;
