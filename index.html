@@ -72,13 +72,22 @@
 
     <section class="task5">
         <div class="widget">
-            <p>Background color: <span class="color">-</span></p>
+            <p class="task5-par">Background color: <span class="color">-</span></p>
             <button type="button" class="change-color">Change color</button>
         </div>
 
     </section>
 
+    <section class="task6">
+        <div id="controls">
+            <input class="task6-input" name="test" type="number" min="1" max="100" step="1" />
+            <button class="task6-create" type="button" data-create>Create</button>
+            <button class="task6-destroy" type="button" data-destroy>Destroy</button>
+        </div>
 
+        <div id="boxes"></div>
+
+    </section>
 
 
     <script type="module" src="./js/task-01.js"></script>
@@ -86,6 +95,7 @@
     <script type="module" src="./js/task-03.js"></script>
     <script type="module" src="./js/task-04.js"></script>
     <script type="module" src="./js/task-05.js"></script>
+    <script type="module" src="./js/task-06.js"></script>
 
 </body>
 
