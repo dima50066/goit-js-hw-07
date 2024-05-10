@@ -6,8 +6,8 @@ const boxes = document.querySelector("#boxes");
 createBtn.addEventListener("click", createBoxes);
 destroyBtn.addEventListener("click", destroyBoxes);
 
-function createBoxes(amount) {
-  amount = input.value;
+function createBoxes() {
+  const amount = input.value;
 
   if (amount < 1 || amount > 100) {
     alert("Please enter a number between 1 and 100.");
@@ -16,6 +16,8 @@ function createBoxes(amount) {
 
   destroyBoxes();
 
+  const fragment = document.createDocumentFragment();
+
   for (let i = 0; i < amount; i++) {
     const box = document.createElement("div");
     const size = 30 + i * 10;
@@ -23,8 +25,10 @@ function createBoxes(amount) {
     box.style.width = `${size}px`;
     box.style.height = `${size}px`;
     box.style.backgroundColor = color;
-    boxes.appendChild(box);
+    fragment.appendChild(box);
   }
+
+  boxes.appendChild(fragment);
 
   input.value = "";
 }
